@@ -10,13 +10,19 @@ import UIKit
 
 class otherViewController: UIViewController {
 
+    
+    @IBOutlet weak var inputDisplayLabel: UILabel!
+    var output: String?
     //Go back the previous page
     
     @IBAction func dismissButtonWasPressed(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)
+        
     }
     override func viewDidLoad() {
         super.viewDidLoad()
+        inputDisplayLabel.text = output
+        
 
         // Do any additional setup after loading the view.
     }
